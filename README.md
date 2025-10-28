@@ -6,3 +6,6 @@ The ROM comes bundled with three games:
 * *Captain Bassam*: New translation hack to Arabic of Captain Tsubasa II
 
 All three of these were authored by Rinco and featured voice acting as the main attractive point.
+
+The multicart is, in fact, the *Os Cavaleiros do Zodíaco* game, as the menu's code is simply glued onto the audio data for the ending theme.
+The other two games are separate and in conjunction with the CDZ game.
