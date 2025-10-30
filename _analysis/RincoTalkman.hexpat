@@ -1,7 +1,7 @@
 #pragma author gmestanley
 #pragma description Rinco Talkman built-in ROM
 
-/*#include <D:/_LAPTOPBACKUP/morehexcrap/nes.hexpat>*/import std.string;
+import std.string;
 
 namespace MulticartMenu {
 	u8 menuCtrlCode[1152] @ 0x28010;
@@ -99,6 +99,17 @@ namespace Seiya {
 	u8 titleSourceCodeCopy3[217] @ 0x59F37;
 	u8 titleSourceCodeCopy4[217] @ 0x5BF37;
 	std::string::SizedString<u8> characterNamesA[9] @ 0x5C408;
+	u8 unknownSubroutine28[35] @ 0x5D2A2;
+	u8 unknownSubroutine27[2] @ 0x5D2C5;
+	u8 unknownSubroutine26[51] @ 0x5D2C7;
+	u8 unknownSubroutineZ[17] @ 0x5D313;
+	u8 unknownSubroutineY[25] @ 0x5D324;
+	u8 unknownSubroutineX[25] @ 0x5D33D;
+	u8 unknownSubroutineW[17] @ 0x5D356;
+	u8 unknownSubroutineV[15] @ 0x5D367;
+	u8 unknownSubroutineU[33] @ 0x5D376;
+	u8 unknownSubroutineT[24] @ 0x5D397;
+	u8 unknownSubroutineS[19] @ 0x5D3AF;
 	u8 unknownSubroutineR[12] @ 0x5D3C2;
 	u8 unknownSubroutineQ[50] @ 0x5D3CE;
 	u8 unknownSubroutineP[16] @ 0x5D400;
