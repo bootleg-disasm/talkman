@@ -1,5 +1,5 @@
-sei
-cld
+sei ; Set interrupt disable flag
+cld ; Clear decimal mode (2A03 does not have it due to MOS patent) flag
 ldx #0xff
 txs
 lda #0x00
