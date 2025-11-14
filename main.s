@@ -3,12 +3,12 @@ cld ; Clear decimal mode (2A03 does not have it due to MOS patent) flag
 ldx #$ff ; Load 255 ($FF) into X register
 txs			; Transfer X to stack pointer
 lda #$00	; Load 0 ($00) into Accumulator
-sta $2000	; Store (same as Load but does not affect flags) $2000 into Accumulator
-sta $2001	; Store $2001 into Accumulator
+sta $2000	; Store Accumulator into $2000
+sta $2001	; Store Accumulator into $2001
 BRANCH:
 lda $2002	; Load $2002 into Accumulator
 bpl BRANCH	; Branch back to BRANCH if negative flag clear
-ldy #$02
+ldy #$02	; Load 255 ($FF) into X register
 sty $01
 ldy #$00
 tya
