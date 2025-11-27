@@ -5877,9 +5877,9 @@
 	PLA			; Pull accumulator from stack
 	PLP			; Pull processor status from stack
 	RTI			; Return from interrupt
-;------------------------
-;---unidentified block---
-
+;---------E000-----------
+;-returned to subroutine-
+	RTS
 ;------------------------
 	LDA $0435
 	BNE $E8EE

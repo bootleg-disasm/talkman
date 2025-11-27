@@ -55,7 +55,8 @@ namespace CDZ {
     struct RepeatedStructures {
         u8 unknownSubroutine2[252] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE7B7;
         u8 unknownSubroutine3[32] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8F6;
-        u8 irqHandler[23] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8DF;
+        u8 irqHandler[22] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8DF;
+        u8 returnedToSubroutineE000 @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8F5;
         u8 unknownSubroutine4[400] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE916;
         u8 unknownSubroutine5[115] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEB2F;
         u8 unknownSubroutine6[144] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEF3F;
