@@ -10,22 +10,22 @@ namespace MulticartMenu {
 
 fn sndLengths() {
     if ($ < 0x7000) {
-    match(std::core::array_index()) {
-        (0): return 400;
-        (1): return 752;
-        (2): return 880;
-        (3): return 912;
-        (4): return 1376;
-        (5): return 992;
-        (6): return 256;
-        (7): return 1632;
-        (8): return 1744;
-        (9): return 1360;
-        (10): return 992;
-        (11): return 736;
-        (12): return 1024;
-        (13): return 1104;
-    }
+        match(std::core::array_index()) {
+            (0): return 400;
+            (1): return 752;
+            (2): return 880;
+            (3): return 912;
+            (4): return 1376;
+            (5): return 992;
+            (6): return 256;
+            (7): return 1632;
+            (8): return 1744;
+            (9): return 1360;
+            (10): return 992;
+            (11): return 736;
+            (12): return 1024;
+            (13): return 1104;
+        }
     } else return 3696;
 };
 
@@ -46,23 +46,32 @@ namespace CDZ {
     u8 titleSourceCode[770] @ 0xBD0E;
 
     struct DebugSymbol {
-        u8 unknown[10];
-        std::string::SizedString<u8> symbol;
-    };
-
-    struct FracturedDebugSymbols {
-        char remainingSymbol[];
-        DebugSymbol chunks[while($<0xD010)];
+        if ($>=0xCCC6&&$!=0xD009&&$!=0xE78F) u8 unknown[10];
+        if ($==0xD009) u8 unknown[7];
+        if ($==0xE78F) u8 unknown[1];
+        if ($==0xCCF4) {
+            u8 corruptedSize;
+            char symbol[4];
+        }
+        if ($==0xCD95) {
+            u8 corruptedSize;
+            char symbol[9];
+        }
+        if ($==0xCEC0) {
+            u8 corruptedSize;
+            char symbol[5];
+        }
+        if ($==0xCF57) {
+            u8 corruptedSize;
+            char symbol[8];
+        }
+        if ($<0xCCC6) char symbol[8];
+        else if ($!=0xCCF9&&$!=0xCD9F&&$!=0xCEC6&&$!=0xCF60&&$!=0xD010&&$!=0xE790) std::string::SizedString<u8> symbol;
     };
     u8 atlasSpecialArabic[3246] @ 0xC010;
-    FracturedDebugSymbols debugSymbols @ 0xCCBE;
-
-    struct CutoffDebugSymbols {
-        DebugSymbol chunks[while($<0xE78F)];
-        u8 unknown[10];
-    };
+    DebugSymbol debugSymbols[while($<0xD010)] @ 0xCCBE;
     u8 abelSpecialArabic[3168] @ 0xD010;
-    CutoffDebugSymbols debugSymbols2 @ 0xDC70;
+    DebugSymbol debugSymbols2[while($<0xE790)] @ 0xDC70;
 
     struct RepeatedStructures {
         u8 unknownSubroutine2[252] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE7B7;
