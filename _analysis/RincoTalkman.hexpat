@@ -85,7 +85,7 @@ namespace CDZ {
         u8 unknownSubroutine8[51] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF10F;
         u8 unknownSubroutine9[39] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF142;
         u8 englishCharacterNames[140] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF6B2;
-        u8 arabicCharacterNames[191] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF748;
+        u8 arabicCharacterNames[130] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF748;
         u8 streetFighterDisclaimer[34] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF80C;
         u8 unknownSubroutine10[30] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF984;
         u8 unknownSubroutine11[6] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF9A2;
