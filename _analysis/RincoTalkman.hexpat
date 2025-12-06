@@ -47,8 +47,7 @@ namespace CDZ {
 
     struct DebugSymbol {
         if ($>=0xCCC6&&$!=0xD009&&$!=0xE78F) u8 unknown[10];
-        if ($==0xD009) u8 unknown[7];
-        if ($==0xE78F) u8 unknown[1];
+        if ($==0xD009||$==0xE78F) u8 unknown[7];
         if ($==0xCCF4) {
             u8 corruptedSize;
             char symbol[4];
@@ -108,6 +107,7 @@ namespace CDZ {
     
     u8 ending[115030] @ 0x1000A;
     u8 endingNarration[67967] @ 0x2C160;
+    u8 unknownSubroutine31[0x98] @ 0x40010;
     u8 sndSourceCodeCopy[778] @ 0x41D06;
     u8 titleSourceCodeCopy[217] @ 0x43F37;
     u8 titleSourceCodeCopy2[217] @ 0x45F37;

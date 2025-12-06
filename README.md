@@ -1,4 +1,4 @@
-ENGLISH:
+ENGLISH:<br>
 This repository is for disassembling the built-in ROM of the Rinco Talkman, a Famiclone from 1997 capable of outputting audio samples of larger quality than the NES' 2A03 can handle. More information [here](https://www.nesdev.org/wiki/NES_2.0_Mapper_594).
 
 The ROM comes bundled with three games:
@@ -11,7 +11,7 @@ All three of these were authored by Rinco and featured voice acting as the main 
 The multicart is, in fact, the *Os Cavaleiros do Zodíaco* game, as the menu's code is simply glued onto the audio data for the ending theme.
 The other two games are separate and bundled together with the CDZ game.
 
-PORTUGUÊS:
+PORTUGUÊS:<br>
 Esse repositório é para desmontar a ROM integrada do Rinco Talkman, um famiclone de 1997 capaz de produzir samples de áudio de maior qualidade que o 2A03 (processador de código e áudio) do NES pode aguentar.
 Mais informações [aqui](https://www.nesdev.org/wiki/NES_2.0_Mapper_594) (em inglês).
 
@@ -23,7 +23,7 @@ A ROM vem com três jogos:
 O multicartucho é, de fato, o jogo *Os Cavaleiros do Zodíaco*, como o código do menu é simplesmente colado com os dados musicais para o tema do final.
 Os outros dois jogos são separados e contidos junto com o jogo de CDZ.
 
-ESPAÑOL:
+ESPAÑOL:<br>
 Este repositório es para desensamblar la ROM integrada del Rinco Talkman, un famiclone de 1997 capaz de producir samples de audio de mayor calidad que el 2A03 (procesador de código y audio) del NES puede aguantar. Más informaciones [aquí](https://www.nesdev.org/wiki/NES_2.0_Mapper_594) (en inglés).
 
 La ROM viene con trés juegos:
