@@ -191,7 +191,7 @@ namespace CDZ {
     u8 creditsCopy3[152] @ 0x67B5E;
     u8 optionsCopy3[38] @ 0x67C22;
     u8 arabicDialogue[1824] @ 0x71320;
-    u8 arabicCutscenes[1504] @ 0x73460;
+    u8 arabicDialogueHalfCopy[1504] @ 0x73460;
     u8 arabicUnknown[124] @ 0x75714;
     u8 seiyaDescription[47168] @ 0x80010;
     u8 shiryuDescription[43296] @ 0x8B860;
