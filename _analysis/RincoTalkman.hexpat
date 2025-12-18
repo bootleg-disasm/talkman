@@ -116,7 +116,7 @@ namespace CDZ {
     u8 sndSourceCodeCopy3[778] @ 0x49D06;
     u8 englishNarration[2731] @ 0x4B320;
     u8 sndSourceCodeHalfCopy[581] @ 0x4BDCB;
-    u8 arabicText[816] @ 0x4D310;
+    u8 arabicText[804] @ 0x4D31C;
     u8 englishNarrationCopy[1931] @ 0x4D640;
     u8 sndSourceCodeHalfCopy2[581] @ 0x4DDCB;
     u8 sndSourceCodeQuarterCopy[217] @ 0x4FF37;
