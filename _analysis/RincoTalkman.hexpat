@@ -173,10 +173,10 @@ namespace CDZ {
     
     u8 arabicDialogueCopy[1824] @ 0x51320;
     u8 sndSourceCodeQuarterCopy2[217] @ 0x51F37;
-    u8 arabicCutscenesCopy[1504] @ 0x53460;
+    u8 arabicDialogueHalfCopy2[1503] @ 0x53461;
     u8 sndSourceCodeQuarterCopy3[217] @ 0x53F37;
     u8 assemblyInstruction[32] @ 0x55FF0;
-    u8 arabicUnknownCopy[124] @ 0x55714;
+    u8 arabicDialogueShortCopy2[124] @ 0x55714;
     u8 resetHandler[318] @ 0x5E560;
     u8 nmiHandler[233] @ 0x5E69E;
     u8 credits[153] @ 0x61B5C;
@@ -191,8 +191,8 @@ namespace CDZ {
     u8 creditsCopy3[152] @ 0x67B5E;
     u8 optionsCopy3[38] @ 0x67C22;
     u8 arabicDialogue[1824] @ 0x71320;
-    u8 arabicDialogueHalfCopy[1504] @ 0x73460;
-    u8 arabicUnknown[124] @ 0x75714;
+    u8 arabicDialogueHalfCopy[1503] @ 0x73461;
+    u8 arabicDialogueShortCopy[124] @ 0x75714;
     u8 seiyaDescription[47168] @ 0x80010;
     u8 shiryuDescription[43296] @ 0x8B860;
     u8 hyogaDescription[37007] @ 0x96180;
