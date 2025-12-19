@@ -116,7 +116,7 @@ namespace CDZ {
     u8 sndSourceCodeCopy3[778] @ 0x49D06;
     u8 englishNarration[2731] @ 0x4B320;
     u8 sndSourceCodeHalfCopy[581] @ 0x4BDCB;
-    u8 arabicText[804] @ 0x4D31C;
+    u8 arabicCutscenes[804] @ 0x4D31C;
     u8 englishNarrationCopy[1931] @ 0x4D640;
     u8 sndSourceCodeHalfCopy2[581] @ 0x4DDCB;
     u8 sndSourceCodeQuarterCopy[217] @ 0x4FF37;
@@ -171,12 +171,12 @@ namespace CDZ {
     };
     RepeatedStructures50000h repeatedStructures50000h[3] @ 0x50000;
     
-    u8 arabicDialogueCopy[1824] @ 0x51320;
+    u8 arabicNarrationCopy[1824] @ 0x51320;
     u8 sndSourceCodeQuarterCopy2[217] @ 0x51F37;
-    u8 arabicDialogueHalfCopy2[1503] @ 0x53461;
+    u8 arabicNarrationHalfCopy2[1503] @ 0x53461;
     u8 sndSourceCodeQuarterCopy3[217] @ 0x53F37;
     u8 assemblyInstruction[32] @ 0x55FF0;
-    u8 arabicDialogueShortCopy2[124] @ 0x55714;
+    u8 arabicNarrationShortCopy2[124] @ 0x55714;
     u8 resetHandler[318] @ 0x5E560;
     u8 nmiHandler[233] @ 0x5E69E;
     u8 credits[153] @ 0x61B5C;
@@ -184,15 +184,15 @@ namespace CDZ {
     u8 englishDialogue[3150] @ 0x62070;
     u8 creditsCopy[152] @ 0x63B5E;
     u8 optionsCopy[38] @ 0x63C22;
-    u8 arabicText2[5592] @ 0x64070;
+    u8 arabicDialogue[5592] @ 0x64070;
     u8 creditsCopy2[152] @ 0x65B5E;
     u8 optionsCopy2[38] @ 0x65C22;
-    u8 arabicText2HalfCopy[4054] @ 0x66672;
+    u8 arabicDialogueHalfCopy[4054] @ 0x66672;
     u8 creditsCopy3[152] @ 0x67B5E;
     u8 optionsCopy3[38] @ 0x67C22;
-    u8 arabicDialogue[1824] @ 0x71320;
-    u8 arabicDialogueHalfCopy[1503] @ 0x73461;
-    u8 arabicDialogueShortCopy[124] @ 0x75714;
+    u8 arabicNarration[1824] @ 0x71320;
+    u8 arabicNarrationHalfCopy[1503] @ 0x73461;
+    u8 arabicNarrationShortCopy[124] @ 0x75714;
     u8 seiyaDescription[47168] @ 0x80010;
     u8 shiryuDescription[43296] @ 0x8B860;
     u8 hyogaDescription[37007] @ 0x96180;
