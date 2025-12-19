@@ -187,7 +187,7 @@ namespace CDZ {
     u8 arabicText2[5592] @ 0x64070;
     u8 creditsCopy2[152] @ 0x65B5E;
     u8 optionsCopy2[38] @ 0x65C22;
-    u8 arabicText3[4054] @ 0x66672;
+    u8 arabicText2HalfCopy[4054] @ 0x66672;
     u8 creditsCopy3[152] @ 0x67B5E;
     u8 optionsCopy3[38] @ 0x67C22;
     u8 arabicDialogue[1824] @ 0x71320;
