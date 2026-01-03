@@ -61,3 +61,17 @@ ldy #$76		            ; Load 118 ($76) into Y register
 ; A=00 X=81 Y=76 SP=FF
 jsr $80c1
 lda #$00		            ; Load 0 ($00) into Accumulator
+sta $2005		            ; Store Accumulator into $2005
+sta $2005		            ; Store Accumulator into $2005
+lda #$00		            ; Load 0 ($00) into Accumulator
+sta $2000		            ; Store Accumulator into $2000
+lda #$1E		            ; Load 30 ($1E) into Accumulator
+
+asl a
+asl a
+asl a
+asl a
+
+
+dey
+rts
