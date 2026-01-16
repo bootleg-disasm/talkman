@@ -12,6 +12,8 @@ The game compilation is, in fact, the *Os Cavaleiros do Zodíaco* game, as the m
 The other two games are separate and bundled together with the CDZ game.
 
 Currently the end goal of this project is to fix the English version of the game, unused inside the ROM.
+TO-DO:
+* Fix English voicelines for end of fight being swapped for individual characters themselves, and ones for techniques being swapped between two characters (last one is due to the character order being swapped internally for the technique ID)
 <br>
 <br>
 <br>
@@ -28,6 +30,8 @@ A compilação de jogos é, de fato, o jogo *Os Cavaleiros do Zodíaco*, como o 
 Os outros dois jogos são separados e contidos junto com o jogo de CDZ.
 
 Atualmente o objetivo deste projeto é consertar a versão em inglês do jogo, inutilizada dentro da ROM.
+A FAZER:
+* Consertar vozes em inglês para fim de batalha tendo sido trocadas para os personagens individuais próprios, e as para técnicas entre dois personagens (este último é devido a ordem de personagens estar trocada internalmente para o ID de técnicas)
 <br>
 <br>
 <br>
