@@ -6687,10 +6687,10 @@
 	SEI					; Set interrupt disable flag
 	CLD					; Clear decimal mode (2A03 does not have it due to MOS patent) flag
 	LDA #$06			; Load $06 into Accumulator
-	STA $8000
+	STA $8000			; Store $8000 into Accumulator
 	LDA #$14
 	STA $8001
-	JMP $8000
+	JMP $8000			; Jump to $8000 (so, $078000)
 	STA $8001
 	JMP $8000
 ;---unidentified block---
