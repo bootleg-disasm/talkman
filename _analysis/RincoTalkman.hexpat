@@ -219,6 +219,9 @@ namespace CDZ {
     u8 hyogaDescription[37008] @ 0x96180;
     u8 afroditeDescription[28315] @ 0x9F210;
     u8 berengueDescription[42437] @ 0xA60AB;
+    u8 atlasDescription[35818] @ 0xB0670;
+    u8 abelDescription[59043] @ 0xB925A;
+    u8 seiyaBattleIntro[7844] @ 0xC78FD;
 
 
     u8 introOpeningCutscene[6144] @ 0x300010;
