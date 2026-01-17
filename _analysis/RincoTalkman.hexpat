@@ -218,7 +218,7 @@ namespace CDZ {
     u8 shiryuDescription[43296] @ 0x8B860;
     u8 hyogaDescription[37008] @ 0x96180;
     u8 afroditeDescription[28315] @ 0x9F210;
-    u8 berengueDescription[27257] @ 0xA60AB;
+    u8 berengueDescription[42437] @ 0xA60AB;
 
 
     u8 introOpeningCutscene[6144] @ 0x300010;
