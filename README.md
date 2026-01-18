@@ -12,6 +12,7 @@ The game compilation is, in fact, the *Os Cavaleiros do Zodíaco* game, as the m
 The other two games are separate and bundled together with the CDZ game.
 
 Currently the end goal of this project is to fix the English version of the game, unused inside the ROM.
+
 TO-DO:
 * Fix English voicelines for end of fight being swapped for individual characters themselves, and ones for techniques being swapped between two characters (last one is due to the character order being swapped internally for the technique ID)
 
@@ -34,8 +35,13 @@ A compilação de jogos é, de fato, o jogo *Os Cavaleiros do Zodíaco*, como o 
 Os outros dois jogos são separados e contidos junto com o jogo de CDZ.
 
 Atualmente o objetivo deste projeto é consertar a versão em inglês do jogo, inutilizada dentro da ROM.
+
 A FAZER:
-* Consertar vozes em inglês para fim de batalha tendo sido trocadas para os personagens individuais próprios, e as para técnicas entre dois personagens (este último é devido a ordem de personagens estar trocada internalmente para o ID de técnicas)
+* Consertar vozes em inglês para fim de batalha tendo sido trocadas para os próprios personagens individuais, e as para técnicas entre dois personagens (este último é devido a ordem de personagens estar trocada internamente para o ID de técnicas)
+
+Notas:
+* Para CDZ, tudo depois de $080000 é mais áudio Talkman, não precisa ser inspecionado
+* Dados para The Dragon começam em $180010.
 <br>
 <br>
 <br>
@@ -53,3 +59,10 @@ La compilación de juegos es, de facto, el juego *Os Cavaleiros do Zodíaco*, co
 Los otros dos juegos son separados y contenidos junto con el juego de CDZ.
 
 Actualmente el objetivo deste proyecto es consertar la versión en inglés del juego, inutilizada dentro de la ROM.
+
+PENDIENTE:
+* Consertar voces en inglés para fin de batalla tendo sido trocadas para los próprios personajes individuales, y para las tecnicas entre dos personajes (este último es porque la orden de los personajes está trocada internamiente para el ID de tecnicas)
+
+Notas:
+* Para CDZ, todo despues de $080000 es más audio Talkman, no necesita ser inspecionado
+* Datos para The Dragon comienzan en $180010.
