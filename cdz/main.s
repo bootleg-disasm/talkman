@@ -5867,7 +5867,7 @@
 	PHA			; Push accumulator on stack
 	TYA			; Transfer Y to accumulator
 	PHA			; Push accumulator on stack
-	JSR $0423
+	JSR $0423 (JMP JUMPED)	; Jump to jump instruction in NES RAM
 	LDA $0087	; Load $87 into A
 	STA $8000	; Store $8000 into accumulator
 	PLA			; Pull accumulator from stack
@@ -6009,6 +6009,7 @@
 	STA $0435
 	RTS
 ;------------------------
+JUMPED:
 	LDA $0435
 	BNE $EB53
 	STA $E000

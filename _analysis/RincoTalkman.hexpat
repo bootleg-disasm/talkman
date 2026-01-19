@@ -79,6 +79,11 @@ namespace CDZ {
     u8 abelSpecialArabic[3168] @ 0xD010;
     DebugSymbol debugSymbols2[while($<0xE790)] @ 0xDC70;
 
+    struct Vectors {
+        u16 nmi;
+        u16 resetVector [[comment("Entry Point")]];
+        u16 externalIRQ;
+    };
     struct RepeatedStructures {
         u8 unknownSubroutine2[252] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE7B7;
         u8 unknownSubroutine3[32] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8F6;
@@ -109,10 +114,11 @@ namespace CDZ {
         u8 unknownSubroutine23[11] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xFC93;
         u8 unknownSubroutine24[4] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xFC9E;
         u8 unknownSubroutine25 @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xFCA2;
+        Vectors vectors @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0x1000A;
     };
     RepeatedStructures repeatedStructures[4] @ 0xE7A0;
 
-    u8 ending[115030] @ 0x1000A;
+    u8 ending[115024] @ 0x10010;
     u8 endingNarration[67967] @ 0x2C160;
     u8 unknownSubroutine31[0x98] @ 0x40010;
     u8 sndSourceCodeCopy[778] @ 0x41D06;
@@ -127,13 +133,6 @@ namespace CDZ {
     u8 englishNarrationCopy[1931] @ 0x4D640;
     u8 sndSourceCodeHalfCopy2[581] @ 0x4DDCB;
     u8 sndSourceCodeQuarterCopy[217] @ 0x4FF37;
-
-    struct Vectors {
-        u16 nmi;
-        u16 resetVector [[comment("Entry Point")]];
-        u16 externalIRQ;
-    };
-
     struct RepeatedStructures50000h {
         u8 titleSourceCodeCopy3[217] @ 0x50000+0x10000*std::core::array_index()+0x9F37;
         u8 titleSourceCodeCopy4[217] @ 0x50000+0x10000*std::core::array_index()+0xBF37;
@@ -173,7 +172,6 @@ namespace CDZ {
         u8 debugSymbolsQuarterCopy[47] @ 0x50000+0x10000*std::core::array_index()+0xDFE1;
         u8 debugSymbolsQuarterCopy2[77] @ 0x50000+0x10000*std::core::array_index()+0xE513;
         u8 unknownSubroutine[21] @ 0x50000+0x10000*std::core::array_index()+0xE787;
-        Vectors vectors @ 0x50000+0x10000*std::core::array_index()+0x1000A;
     };
     RepeatedStructures50000h repeatedStructures50000h[3] @ 0x50000;
 
