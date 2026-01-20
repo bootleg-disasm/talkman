@@ -91,6 +91,7 @@ namespace CDZ {
         u8 returnedToSubroutineE000 @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8F5;
         u8 unknownSubroutine4[400] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE916;
         u8 unknownSubroutine5[115] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEB2F;
+        u8 JUMPED2[0x39D] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEBA2;
         u8 unknownSubroutine6[144] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEF3F;
         u8 unknownSubroutine7[30] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF075;
         u8 unknownSubroutine8[51] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF10F;

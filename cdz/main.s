@@ -6016,14 +6016,18 @@
 	RTS
 ;------------------------
 JUMPED:
-	LDA $0435	; Store Accumulator into $0435
+	LDA $0435	; Load $0435 into Accumulator
+	; A=00 X=00 Y=00 SP=00 czidbvn
 	BNE $EB53	; Branch if not equal to $EB53
+	; First two instructions here do nothing at launch
 	STA $E000	; Store Accumulator into $E000
 	STA $E001	; Store Accumulator into $E001
 	LDA #$50	; Load ($50) into Accumulator
+	; A=50 X=00 Y=00 SP=00 czidbvn
 	STA $C000	; Store Accumulator into $C000
 	STA $C001	; Store Accumulator into $C001
 	LDA #$84	; Load ($84) into Accumulator
+	; A=84 X=00 Y=00 SP=00 czidbvn
 	STA $8000	; Store Accumulator into $8000
 	LDX $06B8	; Load X into $06B8
 	STX $8001	; Store X into $8001
@@ -6034,6 +6038,7 @@ JUMPED:
 	INC $0435	; Increment $0435 
 	RTS			; Return to previous code
 ;------------------------
+JUMPED2:
 	LDA #$80
 	STA $8000
 	LDA #$F8
