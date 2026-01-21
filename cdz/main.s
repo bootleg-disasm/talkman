@@ -6018,24 +6018,27 @@
 JUMPED:
 	LDA $0435	; Load $0435 into Accumulator
 	; A=00 X=00 Y=00 SP=00 czidbvn
-	BNE $EB53	; Branch if not equal to $EB53
+	BNE JUMPEDALPHA	; Branch if not equal (the zero flag (z in czidbvn) is cleared) to JUMPEDALPHA
 	; First two instructions here do nothing at launch
 	STA $E000	; Store Accumulator into $E000
 	STA $E001	; Store Accumulator into $E001
 	LDA #$50	; Load ($50) into Accumulator
-	; A=50 X=00 Y=00 SP=00 czidbvn
+	; A=50 X=01 Y=00 SP=00 czidbvn
 	STA $C000	; Store Accumulator into $C000
 	STA $C001	; Store Accumulator into $C001
 	LDA #$84	; Load ($84) into Accumulator
-	; A=84 X=00 Y=00 SP=00 czidbvn
+	; A=84 X=01 Y=00 SP=00 czidbvn
 	STA $8000	; Store Accumulator into $8000
 	LDX $06B8	; Load X into $06B8
+JUMPEDALPHA:
 	STX $8001	; Store X into $8001
 	INX			; Increment X
+	; A=00 X=01 Y=00 SP=00 czidbvn/A=84 X=02 Y=00 SP=00 czidbvn
 	LDA #$85	; Load ($85) into Accumulator
+	; A=85 X=01 Y=00 SP=00 czidbvn/A=85 X=01 Y=00 SP=00 czidbvn
 	STA $8000	; Store Accumulator into $8000
 	STX $8001	; Store X into $8001
-	INC $0435	; Increment $0435 
+	INC $0435	; Increment $0435
 	RTS			; Return to previous code
 ;------------------------
 JUMPED2:
