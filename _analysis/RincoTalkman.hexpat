@@ -91,7 +91,7 @@ namespace CDZ {
 		u8 returnedToSubroutineE000 @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE8F5;
 		u8 unknownSubroutine4[400] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xE916;
 		u8 unknownSubroutine5[115] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEB2F;
-		u8 JUMPED2[0x39D] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEBA2;
+		u8 JUMPED2[925] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEBA2;
 		u8 unknownSubroutine6[144] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xEF3F;
 		u8 unknownSubroutine7[30] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF075;
 		u8 unknownSubroutine8[51] @ (0x40000+0x10000*std::core::array_index())*(std::core::array_index()>0)+0xF10F;
@@ -176,16 +176,19 @@ namespace CDZ {
 	};
 	RepeatedStructures50000h repeatedStructures50000h[3] @ 0x50000;
 
-	struct Chunk {
-		u8 continuation[3];
-		u8 pixels[15];
+	bitfield LogoStats {
+		length : 7;
+		padding : 1;
 	};
-
-	struct CopyrightLogo {
-		u8 pixels[16];
-		Chunk chunks[3];
-		u8 continuation[3];
-		u8 copyrightString[37];
+	
+	struct LogoInfo {
+		padding[2];
+		LogoStats stats;
+	};
+	
+	struct Chunk {
+		LogoInfo info;
+		u8 tiles[info.stats.length];
 	};
 
 	u8 arabicNarrationCopy[1824] @ 0x51320;
@@ -196,8 +199,8 @@ namespace CDZ {
 	u8 arabicNarrationShortCopy2[124] @ 0x55714;
 	u8 main[318] @ 0x5E560;
 	u8 nmiHandler[233] @ 0x5E69E;
-	u8 copyrightYear[21] @ 0x60696;
-	CopyrightLogo copyrightLogo @ 0x606B1;
+	u8 copyrightYear[20] @ 0x60696;
+	Chunk copyrightLogo[while($<0x06071E)] @ 0x606AE;
 	u8 credits[153] @ 0x61B5C;
 	u8 options[38] @ 0x61C22;
 	u8 englishDialogue[3150] @ 0x62070;

@@ -5877,11 +5877,14 @@
 	LDA $0087	; Load Accumulator into $0087
 	STA $8000	; Store Accumulator into $8000
 	PLA			; Pull accumulator from stack
+	; A=00 X=01 Y=00 SP=00 czidbvn
 	TAY			; Transfer accumulator to Y
 	PLA			; Pull accumulator from stack
 	TAX			; Transfer accumulator to X
+	; A=00 X=00 Y=00 SP=00 czidbvn
 	PLA			; Pull accumulator from stack
 	PLP			; Pull processor status from stack
+	; A=00 X=00 Y=00 SP=00 czidbvn
 	RTI			; Return from interrupt
 ;---------E000-----------
 ;-returned to subroutine-
@@ -6017,25 +6020,25 @@
 ;------------------------
 JUMPED:
 	LDA $0435	; Load $0435 into Accumulator
-	; A=00 X=00 Y=00 SP=00 czidbvn
+	; A=00 X=00 Y=00 SP=00 cZidbvn
 	BNE JUMPEDALPHA	; Branch if not equal (the zero flag (z in czidbvn) is cleared) to JUMPEDALPHA
 	; First two instructions here do nothing at launch
 	STA $E000	; Store Accumulator into $E000
 	STA $E001	; Store Accumulator into $E001
 	LDA #$50	; Load ($50) into Accumulator
-	; A=50 X=01 Y=00 SP=00 czidbvn
+	; A=50 X=00 Y=00 SP=00 czidbvn
 	STA $C000	; Store Accumulator into $C000
 	STA $C001	; Store Accumulator into $C001
 	LDA #$84	; Load ($84) into Accumulator
-	; A=84 X=01 Y=00 SP=00 czidbvn
+	; A=84 X=00 Y=00 SP=00 czidbvn
 	STA $8000	; Store Accumulator into $8000
 	LDX $06B8	; Load X into $06B8
 JUMPEDALPHA:
 	STX $8001	; Store X into $8001
 	INX			; Increment X
-	; A=00 X=01 Y=00 SP=00 czidbvn/A=84 X=02 Y=00 SP=00 czidbvn
+	; A=00 X=01 Y=00 SP=00 czidbvn
 	LDA #$85	; Load ($85) into Accumulator
-	; A=85 X=01 Y=00 SP=00 czidbvn/A=85 X=01 Y=00 SP=00 czidbvn
+	; A=85 X=01 Y=00 SP=00 czidbvn
 	STA $8000	; Store Accumulator into $8000
 	STX $8001	; Store X into $8001
 	INC $0435	; Increment $0435
